@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  example-project-2-postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: example_project_2_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: zxcvbnasdfgh
+    volumes:
+      - ../data:/var/lib/postgresql/data
+    ports:
+      - 5656:5432
