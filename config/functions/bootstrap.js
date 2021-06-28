@@ -42,8 +42,8 @@ async function runServerBoostrap() {
         blocked: false,
         isActive: true
       };
-      const roleV = await strapi.query("role", "admin").findOne({ code: "strapi-super-admin" });
-      if (!roleV) {
+      const superAdminRole = await strapi.query("role", "admin").findOne({ code: "strapi-super-admin" });
+      if (!superAdminRole) {
         const role = await strapi.query("role", "admin").create({
           name: "Super Admin",
           code: "strapi-super-admin",
@@ -52,7 +52,7 @@ async function runServerBoostrap() {
 
         await strapi.query("user", "admin").create({ ...defaultAdminUser, roles: [role.id] });
       } else {
-        await strapi.query("user", "admin").create({ ...defaultAdminUser, roles: [roleV.id] });
+        await strapi.query("user", "admin").create({ ...defaultAdminUser, roles: [superAdminRole.id] });
       }
 
       strapi.log.info("Admin account was successfully created.");

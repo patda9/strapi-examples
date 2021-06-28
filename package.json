@@ -9,21 +9,33 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/big.js": "6.1.1",
+    "@types/lodash": "4.14.170",
+    "@types/moment": "2.13.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.29.0",
+    "eslint-config-google": "0.14.0",
+    "jest": "27.0.5",
+    "jshint": "2.13.0"
+  },
   "dependencies": {
-    "knex": "0.21.18",
-    "pg": "^8.6.0",
-    "sqlite3": "5.0.0",
-    "strapi": "3.6.2",
-    "strapi-admin": "3.6.2",
-    "strapi-connector-bookshelf": "3.6.2",
-    "strapi-plugin-content-manager": "3.6.2",
-    "strapi-plugin-content-type-builder": "3.6.2",
-    "strapi-plugin-email": "3.6.2",
-    "strapi-plugin-i18n": "3.6.2",
-    "strapi-plugin-upload": "3.6.2",
-    "strapi-plugin-users-permissions": "3.6.2",
-    "strapi-utils": "3.6.2"
+    "big.js": "6.1.1",
+    "knex": "0.95.6",
+    "lodash": "4.17.21",
+    "moment": "2.29.1",
+    "pg": "8.6.0",
+    "strapi": "3.6.5",
+    "strapi-admin": "3.6.5",
+    "strapi-connector-bookshelf": "3.6.5",
+    "strapi-helper-plugin": "3.6.5",
+    "strapi-plugin-content-manager": "3.6.5",
+    "strapi-plugin-content-type-builder": "3.6.5",
+    "strapi-plugin-email": "3.6.5",
+    "strapi-plugin-i18n": "3.6.5",
+    "strapi-plugin-upload": "3.6.5",
+    "strapi-plugin-users-permissions": "3.6.5",
+    "strapi-utils": "3.6.5"
   },
   "author": {
     "name": "A Strapi developer"
